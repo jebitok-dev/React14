@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className="header">
             <div className="header-title">
-                GROMONI
+                <h1>GROMONI</h1>
             </div>
         </div>
     );
