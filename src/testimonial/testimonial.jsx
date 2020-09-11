@@ -5,18 +5,40 @@ import { Carousel } from 'react-responsive-carousel';
 export default class Testimonials extends Component {
   render() {
     return (
-      <Carousel>
+      <Carousel
+      showArrows={true}
+      infiniteLoop={true}
+      showThumbs={false}
+      showStatus={false}
+      autoPlay={true}
+      interval={6100}
+      >
         <div>
           <img src="assets/1.jpeg" />
-          <p className="legend">Legend 1</p>
+          <div className="myCarousel">
+            <p>
+              It's freeing to be able to catch up on customized news and not be
+              distracted by a social media element on the same site
+            </p>
+          </div>
         </div>
         <div>
           <img src="assets/2.jpeg" />
-          <p className="legend">Legend 2</p>
+          <div className="myCarousel">
+            <p>
+              It's freeing to be able to catch up on customized news and not be
+              distracted by a social media element on the same site
+            </p>
+          </div>
         </div>
         <div>
           <img src="assets/3.jpeg" />
-          <p className="legend">Legend 3</p>
+          <div className="myCarousel">
+            <p>
+              It's freeing to be able to catch up on customized news and not be
+              distracted by a social media element on the same site
+            </p>
+          </div>
         </div>
       </Carousel>
     );
