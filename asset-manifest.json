@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/jebitok-dev/React14/static/css/main.a6aeab8f.chunk.css",
+    "main.js": "/jebitok-dev/React14/static/js/main.6b1d5017.chunk.js",
+    "main.js.map": "/jebitok-dev/React14/static/js/main.6b1d5017.chunk.js.map",
+    "runtime-main.js": "/jebitok-dev/React14/static/js/runtime-main.ce2e4d12.js",
+    "runtime-main.js.map": "/jebitok-dev/React14/static/js/runtime-main.ce2e4d12.js.map",
+    "static/css/2.fb346933.chunk.css": "/jebitok-dev/React14/static/css/2.fb346933.chunk.css",
+    "static/js/2.339a7bb0.chunk.js": "/jebitok-dev/React14/static/js/2.339a7bb0.chunk.js",
+    "static/js/2.339a7bb0.chunk.js.map": "/jebitok-dev/React14/static/js/2.339a7bb0.chunk.js.map",
+    "index.html": "/jebitok-dev/React14/index.html",
+    "precache-manifest.03951b8275cb790e5f39b7b3206089ae.js": "/jebitok-dev/React14/precache-manifest.03951b8275cb790e5f39b7b3206089ae.js",
+    "service-worker.js": "/jebitok-dev/React14/service-worker.js",
+    "static/css/2.fb346933.chunk.css.map": "/jebitok-dev/React14/static/css/2.fb346933.chunk.css.map",
+    "static/css/main.a6aeab8f.chunk.css.map": "/jebitok-dev/React14/static/css/main.a6aeab8f.chunk.css.map",
+    "static/js/2.339a7bb0.chunk.js.LICENSE.txt": "/jebitok-dev/React14/static/js/2.339a7bb0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ce2e4d12.js",
+    "static/css/2.fb346933.chunk.css",
+    "static/js/2.339a7bb0.chunk.js",
+    "static/css/main.a6aeab8f.chunk.css",
+    "static/js/main.6b1d5017.chunk.js"
+  ]
+}
