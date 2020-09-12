@@ -53,16 +53,16 @@ export default function Contact() {
                 <input
                     name="email"
                     type="email"
-                    placeholder="Email"
+                    placeholder="Email ID"
                     required
                     onChange={handleInput}
                 />
                 <textarea
                     name="message"
-                    placeholder="Message"
+                    placeholder="Business Name"
                     onChange={handleInput}
                 />
-                <input name="submit" type="submit" value="Send" />
+                <input name="submit" type="submit" value="Get Started" />
                 {message}
             </form>
         </div>

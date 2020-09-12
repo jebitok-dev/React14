@@ -1,0 +1,18 @@
+.input-form input,
+.input-form textarea {
+  display: block;
+  padding: 5px 10px;
+  font-size: 14px;
+  width: 300px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.input-form input[type="submit"] {
+  display: inline-block;
+  max-width: 100px;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #eee;
+  cursor: pointer;
+}
