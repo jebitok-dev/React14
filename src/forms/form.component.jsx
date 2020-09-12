@@ -16,7 +16,7 @@ export default function Contact() {
         const {name, email, message} = formData
         try {
             const response = await fetch(
-                "https://v1.nocodeapi.com/Jebitok/google_sheets/YVoKJnFiwlVIsOVA",
+                `https://v1.nocodeapi.com/Jebitok/google_sheets/YVoKJnFiwlVIsOVA`,
                 {
                     method: "post",
                     body: JSON.stringify([[name, email, message]]),
