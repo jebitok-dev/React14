@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Testimonials from './testimonial/testimonial';
+import Contact from './forms/form.component';
 
 
 class App extends Component  {
@@ -12,9 +13,10 @@ class App extends Component  {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing consequat sem vel fermentum nisl et.
       Erat a ac blandit neque amet pharetra ornare non nibh. Quam ultrices integer neque cras cum quam egestas faucibus. 
       Non blandit at in sem ipsum est est.</p>
-      //Testimonial
+      {/* //Testimonial */}
         <h3>Testimonials</h3>
-        <Testimonial />
+        <Testimonials />
+        <Contact />
       </div>
     );
   }  
