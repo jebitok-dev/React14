@@ -11,6 +11,10 @@ export default function Contact() {
         setFormData(copyFormData);
     };
 
+    // const creds = require('./config/myapp-1dd646d7c2af.json'); // the file saved above
+    // const doc = new GoogleSpreadsheet('/d/1REnZe-BjcG81iQywnkDjcSyuGutNJkt5sK96-xYEbss/edit#gid=0');
+    // await doc.useServiceAccountAuth(creds);
+
     const sendData = async e => {
         e.preventDefault();
         const {name, email, message} = formData
