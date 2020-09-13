@@ -1,7 +1,14 @@
 .App {
   text-align: center;
+  font-family: sans-serif;
+  /* display: grid; */
 }
 
 .header {
   background-color: #54E0FF;
+}
+
+.App .form {
+  padding: 40px;
+  align-content: center;
 }
