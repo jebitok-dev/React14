@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Testimonials from './testimonial/testimonial';
-import Contact from './forms/form.component';
+import Contact from './forms/form1.component';
 
 
 class App extends Component  {
@@ -16,6 +16,7 @@ class App extends Component  {
       {/* //Testimonial */}
         <h3>Testimonials</h3>
         <Testimonials />
+        
         <Contact />
       </div>
     );
