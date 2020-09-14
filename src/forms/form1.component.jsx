@@ -1,4 +1,5 @@
 import React from 'react';
+import { Form, Text } from 'informed';
 import 'form.styles.scss';
 
 const SPREADSHEET_ID = '1REnZe-BjcG81iQywnkDjcSyuGutNJkt5sK96-xYEbss/edit#gid=0';

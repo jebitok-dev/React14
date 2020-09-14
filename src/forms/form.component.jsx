@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { Form, Text } from 'informed';
+import { GoogleSpreadsheet } from 'google-spreadsheet';
 import './form.styles.scss';
 
 
-const SPREADSHEET_ID = '1REnZe-BjcG81iQywnkDjcSyuGutNJkt5sK96-xYEbss/edit#gid=0';
 const CLIENT_ID = '107836451793691635552';
 const API_KEY = 'b0b8b52ccd939d3ea6ab70f4d2443293569d2b0b';
 const SCOPE = 'https://www.googleapis.com/auth/spreadsheets';
@@ -17,11 +16,28 @@ export default function Contact() {
         copyFormData[e.target.name] = e.target.value;
         setFormData(copyFormData);
     };
- 
-    // const creds = require('./config/myapp-1dd646d7c2af.json'); // the file saved above
-    // const doc = new GoogleSpreadsheet('/d/1REnZe-BjcG81iQywnkDjcSyuGutNJkt5sK96-xYEbss/edit#gid=0');
-    // await doc.useServiceAccountAuth(creds);
 
+    const sendData = async e => {
+        e.preventDefault();
+        const {name, email, message} = formData
+    const { GoogleSpreadsheet } = require('google-spreadsheet');
+    const doc = new GoogleSpreadsheet('1REnZe-BjcG81iQywnkDjcSyuGutNJkt5sK96-xYEbss/edit#gid=0');
+    await doc.useServiceAccountAuth(require('./config/gromonish-bob8b52ccd93.json'));        }
+    // request.post({url:'http://service.com/upload', formData: formData}, function optionalCallback(err, httpResponse, body) {
+    //     (err, res) => {
+    //         if (err) return console.log('The API returned an error: ' + err);
+    //         const rows = res.data.values;
+    //         if (rows.length) {
+    //           console.log('Name, Major:');
+    //           // Print columns A and E, which correspond to indices 0 and 4.
+    //           rows.map((row) => {
+    //             console.log(`${row[0]}, ${row[4]}`);
+    //           });
+    //         } else {
+    //           console.log('No data found.');
+    //         }
+    //     })
+    // }
     // const sendData = async e => {
     //     e.preventDefault();
     //     const {name, email, message} = formData
@@ -36,29 +52,31 @@ export default function Contact() {
                 //     }
                 // }
     //         );
-    //         const json = await response.json();
-    //         console.log("Success:", JSON.stringify(json));
-    //         setMessage("Success");
-    //     } catch (error) {
-    //         console.error("Error:", error);
-    //         setMessage("Error");
-    //     }
+        //     const json = await response.json();
+        //     console.log("Success:", JSON.stringify(json));
+        //     setMessage("Success");
+        // } catch (error) {
+        //     console.error("Error:", error);
+        //     setMessage("Error");
+        // }
     // };
 
-    const sendData = async e => {
-        e.preventDefault();
-        const {name, email, message} = formData
-        try {
-            const creds = require('./config/gromonish-bob8b52ccd93.json'); // the file saved above
-    const doc = new GoogleSpreadsheet('1REnZe-BjcG81iQywnkDjcSyuGutNJkt5sK96-xYEbss/edit#gid=0');
-    const json = await doc.useServiceAccountAuth(creds);
-    console.log("Success:", JSON.stringify(json));
-            setMessage("Success");
-    } catch (error) {
-        console.error("Error:", error);
-        setMessage("Error");
-    }
-        }
+
+
+    // const sendData = async e => {
+    //     e.preventDefault();
+    //     const {name, email, message} = formData
+    //     try {
+    //         const creds = require('./config/gromonish-bob8b52ccd93.json'); // the file saved above
+    // const doc = new GoogleSpreadsheet('1REnZe-BjcG81iQywnkDjcSyuGutNJkt5sK96-xYEbss/edit#gid=0');
+    // const json = await doc.useServiceAccountAuth(creds);
+    // console.log("Success:", JSON.stringify(json));
+    //         setMessage("Success");
+    // } catch (error) {
+    //     console.error("Error:", error);
+    //     setMessage("Error");
+    // }
+    //     }
 
     return (
         <div className="App">
