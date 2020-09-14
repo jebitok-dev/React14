@@ -7,6 +7,15 @@ const API_KEY = 'b0b8b52ccd939d3ea6ab70f4d2443293569d2b0b';
 const SCOPE = 'https://www.googleapis.com/auth/spreadsheets';
 
 export default class Form extends React.Component {
+    const {formData, setFormData} = useState({});
+    const {message, setMessage} = useState("");
+
+    const handleInput = e => {
+        const copyFormData = { ...formData };
+        copyFormData[e.target.name] = e.target.value;
+        setFormData(copyFormData);
+    };
+
     render() {
         return (
             <div className="App">

@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import './form.styles.scss';
 
+
+const SPREADSHEET_ID = '1REnZe-BjcG81iQywnkDjcSyuGutNJkt5sK96-xYEbss/edit#gid=0';
+const CLIENT_ID = '107836451793691635552';
+const API_KEY = 'b0b8b52ccd939d3ea6ab70f4d2443293569d2b0b';
+const SCOPE = 'https://www.googleapis.com/auth/spreadsheets';
+
 export default function Contact() {
     const [formData, setFormData] = useState({});
     const [message, setMessage] = useState("");

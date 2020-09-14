@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Testimonials from './testimonial/testimonial';
-import Contact from './forms/form1.component';
+import Contact from './forms/form.component';
 
 
 class App extends Component  {
