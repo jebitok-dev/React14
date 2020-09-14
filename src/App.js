@@ -16,8 +16,11 @@ class App extends Component  {
       {/* //Testimonial */}
         <h3>Testimonials</h3>
         <Testimonials />
-        
-        <Contact />
+        <Modal>
+          <Modal.Content>
+              <Contact ref="onSubmit" />
+          </Modal.Content>
+        </Modal>
       </div>
     );
   }  
