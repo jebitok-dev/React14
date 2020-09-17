@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Testimonials from './testimonial/testimonial';
-import Contact from './forms/form.component';
+import Contact from './forms/form2.component';
+import { modal } from 'bootstrap'
 
 
 class App extends Component  {
