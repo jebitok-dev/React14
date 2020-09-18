@@ -2,14 +2,16 @@ import React, { Component } from 'react';
 import './App.css';
 import Testimonials from './testimonial/testimonial';
 import Contact from './forms/form2.component';
-import { modal } from 'bootstrap'
+import { Modal, ModalHeader } from 'reactstrap';
 
 
 class App extends Component  {
    render() {
     return (
       <div className="App">
+        <ModalHeader>
         <h1 className="header">Gromoni</h1>
+        </ModalHeader>
         <h3>How it Works</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing consequat sem vel fermentum nisl et.
       Erat a ac blandit neque amet pharetra ornare non nibh. Quam ultrices integer neque cras cum quam egestas faucibus. 

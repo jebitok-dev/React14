@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import './form.styles.scss';
 
-const { GoogleSpreadsheet } = require('google-spreadsheet');
+// const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 // spreadsheet key is the long id in the sheets URL
 
@@ -43,6 +43,7 @@ console.log(sheet.rowCount);
 // adding / removing sheets
 const newSheet = await doc.addSheet({ title: 'hot new sheet!' });
 await newSheet.delete();
+}
 
 return (
     <div className="App">
